@@ -4,13 +4,15 @@
 #include "config_common.h"
 
 #ifdef AUDIO_ENABLE
-    #define STARTUP_SONG SONG(PLANCK_SOUND)
-    // #define STARTUP_SONG SONG(NO_SOUND)
+#define STARTUP_SONG SONG(PLANCK_SOUND)
+// #define STARTUP_SONG SONG(NO_SOUND)
 
-    #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
-                                  SONG(COLEMAK_SOUND), \
-                                  SONG(DVORAK_SOUND) \
-                                }
+#define DEFAULT_LAYER_SONGS      \
+    {                            \
+        SONG(QWERTY_SOUND),      \
+            SONG(COLEMAK_SOUND), \
+            SONG(DVORAK_SOUND)   \
+    }
 #endif
 
 /*
@@ -41,3 +43,13 @@
 #define ENCODER_RESOLUTION 4
 
 #endif
+
+#define NUMBER_OF_ENCODERS 1
+#define ENCODERS_PAD_A \
+    {                  \
+        B12            \
+    }
+#define ENCODERS_PAD_B \
+    {                  \
+        B13            \
+    }
